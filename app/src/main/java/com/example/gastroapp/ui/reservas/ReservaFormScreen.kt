@@ -69,8 +69,8 @@ fun ReservaFormScreen(
                     when {
                         nombre.isBlank() -> errorMsg = "El nombre es obligatorio"
                         contacto.isBlank() -> errorMsg = "El contacto es obligatorio"
-                        numComensales == null || numComensales <= 0 -> errorMsg = "Número de comensales inválido"
-                        parsedDate == null -> errorMsg = "Formato de fecha inválido (usa dd/MM/yyyy)"
+                        numComensales == null || numComensales <= 0 -> errorMsg = "Número de comensales invalido"
+                        parsedDate == null -> errorMsg = "Formato de fecha invalido (usa dd/MM/yyyy)"
                         parsedDate.before(Date()) -> errorMsg = "La fecha no puede ser anterior a hoy"
                         else -> {
                             val reserva = Reserva(
@@ -113,7 +113,7 @@ fun ReservaFormScreen(
                     }
                 },
                 title = { Text("Reserva Confirmada") },
-                text = { Text("Tu reserva ha sido guardada, añadida al calendario y recibirás un recordatorio.") }
+                text = { Text("Tu reserva ha sido guardada, añadida al calendario y recibiras un recordatorio.") }
             )
         }
     }

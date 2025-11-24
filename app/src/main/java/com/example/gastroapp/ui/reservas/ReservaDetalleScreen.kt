@@ -75,7 +75,7 @@ private fun DetalleReservaCard(
         Text("Hora: ${reserva.hora}")
         Text("Contacto: ${reserva.contacto}")
         Text("Estado: ${reserva.estado}")
-        Text("Mesa asignada: ${numeroMesa ?: "Aún sin asignar"}")
+        Text("Mesa asignada: ${numeroMesa ?: "Aun sin asignar"}")
         Spacer(Modifier.height(24.dp))
         Button(onClick = onVolver) {
             Text("Volver")

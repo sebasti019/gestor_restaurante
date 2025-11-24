@@ -54,9 +54,9 @@ fun AdminReservaCard(reserva: Reserva, fecha: String, onActualizarEstado: (Strin
 
 
     val targetColor = when (reserva.estado) {
-        "CONFIRMADA" -> Color(0xFFC8E6C9) // verde
-        "CANCELADA" -> Color(0xFFFFCDD2) // rojo
-        "REALIZADA" -> Color(0xFFBBDEFB) // azul
+        "CONFIRMADA" -> Color(0xFFC8E6C9)
+        "CANCELADA" -> Color(0xFFFFCDD2)
+        "REALIZADA" -> Color(0xFFBBDEFB)
         else -> MaterialTheme.colorScheme.surfaceVariant
     }
 

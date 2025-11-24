@@ -9,16 +9,16 @@ class ReservaRepository(
     private val reservaDao: ReservaDao
 ) {
 
-    //usuario
+
     suspend fun crearUsuario(user: User): Long = userDao.insert(user)
     suspend fun obtenerUsuarioPorEmail(email: String): User? = userDao.getByEmail(email)
 
-    //mesass
+
     fun obtenerMesas() = mesaDao.getAll()
     suspend fun insertarMesa(mesa: Mesa) = mesaDao.insert(mesa)
     suspend fun actualizarMesa(mesa: Mesa) = mesaDao.update(mesa)
 
-    //reservas
+
     fun obtenerReservas() = reservaDao.getAll()
     suspend fun insertarReserva(reserva: Reserva) = reservaDao.insert(reserva)
     suspend fun actualizarReserva(reserva: Reserva) = reservaDao.update(reserva)
